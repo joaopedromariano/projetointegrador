@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalizar Compra | Drogaria+ Econômica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Mesmo header da página inicial -->
+  </header>
+  <main>
+    <section class="checkout">
+      <h1>Finalizar Compra</h1>
+      <form>
+        <h2>Dados para Entrega</h2>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" required>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" required>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" required>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" required>
+        <h2>Pagamento</h2>
+        <label>
+          <input type="radio" name="pagamento" checked> Cartão de Crédito
+        </label>
+        <label>
+          <input type="radio" name="pagamento"> PIX
+        </label>
+        <label>
+          <input type="radio" name="pagamento"> Boleto
+        </label>
+        <button type="submit" class="btn">Confirmar Pedido</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <!-- Mesmo footer da página inicial -->
+  </footer>
+</body>
+</html>
