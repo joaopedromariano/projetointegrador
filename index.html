@@ -2,58 +2,77 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Drogaria+ Econômica</title>
+  <title>Drogaria+ Econômica — Sua Farmácia Online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <img src="./img/logo.jpg" alt="Drogaria+ Econômica" class="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="catalogo.html">Produtos</a></li>
-          <li><a href="promocoes.html">Promoções</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="login.html">Entrar</a></li>
-          <li><a href="carrinho.html">Carrinho</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header class="topo">
+  <div class="container">
+   <img src="./imagens/logo.jpg" alt="Drogaria+ Econômica" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Entrar</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+    <form class="busca-topo" action="produtos.html" method="get">
+      <input type="search" placeholder="Busque por nome, categoria ou marca" />
+      <button type="submit">Pesquisar</button>
+    </form>
+  </div>
+</header>
+
   <main>
-    <section class="banner">
-      <h1>Bem-vindo à Drogaria+ Econômica</h1>
-      <p>Compre medicamentos, perfumaria e saúde com comodidade e segurança!</p>
-      <a href="catalogo.html" class="btn">Ver Produtos</a>
+    <section class="hero">
+      <h1>Sua saúde e bem-estar em um só lugar</h1>
+      <p>Medicamentos, beleza e prevenção com qualidade, confiança e entrega rápida.</p>
+      <a href="produtos.html" class="btn-principal">Compre Agora</a>
     </section>
     <section class="destaques">
-      <h2>Produtos em Destaque</h2>
+      <h2>Ofertas do Dia</h2>
       <div class="produtos-grid">
         <div class="produto-card">
-          <img src="./img/produtos/paracetamol.jpg" alt="Produto 1">
+          <img src="imagens/paracetamol.jpg" alt="Paracetamol">
           <h3>Paracetamol 500mg</h3>
-          <p class="preco">R$ 9,90</p>
-          <a href="produto.html" class="btn">Ver Detalhes</a>
+          <p class="preco">R$ 11,90</p>
+          <a href="paracetamol.html" class="btn">Detalhes</a>
         </div>
-        <!-- Repita para outros produtos -->
+        <div class="produto-card">
+          <img src="imagens/vitamina c.jpg" alt="Vitamina C">
+          <h3>Vitamina C 1g</h3>
+          <p class="preco">R$ 19,99</p>
+          <a href="vitamina.html" class="btn">Detalhes</a>
+        </div>
+        <div class="produto-card">
+          <img src="imagens/sabonete liquido.jpg" alt="Sabonete Líquido">
+          <h3>Sabonete Líquido 200ml</h3>
+          <p class="preco">R$ 14,90</p>
+          <a href="sabonete.html" class="btn">Detalhes</a>
+        </div>
       </div>
     </section>
-    <section class="confiança">
-      <h2>Por que comprar conosco?</h2>
-      <ul>
-        <li>Atendimento personalizado</li>
-        <li>Preços acessíveis</li>
-        <li>Entrega rápida e retirada em loja</li>
-        <li>Promoções exclusivas</li>
-      </ul>
+    <section class="info-servicos">
+      <div>
+        <h4>Entrega Expressa</h4>
+        <p>Receba em até 3h*</p>
+      </div>
+      <div>
+        <h4>Retire na Loja</h4>
+        <p>Praticidade e economia de frete</p>
+      </div>
+      <div>
+        <h4>Programa de Fidelidade</h4>
+        <p>Descontos e ofertas exclusivas</p>
+      </div>
     </section>
   </main>
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Drogaria+ Econômica - Ceilândia/DF</p>
-    </div>
+    <p>&copy; 2025 Drogaria+ Econômica — Ceilândia/DF | Projeto acadêmico.</p>
   </footer>
 </body>
 </html>

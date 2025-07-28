@@ -4,31 +4,47 @@
   <meta charset="UTF-8">
   <title>Paracetamol 500mg | Drogaria+ Econômica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header>
-    <!-- Mesmo header da página inicial -->
-  </header>
+ <header class="topo">
+  <div class="container">
+    <img src="./imagens/logo.jpg" alt="Drogaria+ Econômica" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Entrar</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+    <form class="busca-topo" action="produtos.html" method="get">
+      <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+      <button type="submit" title="Buscar">🔍</button>
+    </form>
+  </div>
+</header>
+
+
   <main>
     <section class="produto-detalhe">
-      <img src="prod1.jpg" alt="Paracetamol 500mg">
-      <div class="produto-info">
-        <h1>Paracetamol 500mg 20 comprimidos</h1>
-        <p class="preco">R$ 9,90</p>
-        <p><strong>Descrição:</strong> Analgésico e antitérmico. Uso adulto e pediátrico.</p>
+      <img src="imagens/paracetamol.jpg" alt="Paracetamol 500mg">
+      <div>
+        <h1>Paracetamol 500mg (20 comprimidos)</h1>
+        <p class="preco">R$ 11,90</p>
+        <p>Alívio de dores e febre. Uso adulto e pediátrico. Consulte a bula.</p>
         <form>
           <label for="qtd">Quantidade:</label>
-          <input type="number" id="qtd" name="qtd" value="1" min="1" max="10">
+          <input type="number" id="qtd" value="1" min="1" max="10">
           <button type="submit" class="btn">Adicionar ao Carrinho</button>
         </form>
-        <p><strong>Disponibilidade:</strong> Em estoque</p>
-        <p><strong>Retirada em loja:</strong> Disponível</p>
       </div>
     </section>
   </main>
   <footer>
-    <!-- Mesmo footer da página inicial -->
+    <p>&copy; 2025 Drogaria+ Econômica — Ceilândia/DF | Projeto acadêmico.</p>
   </footer>
 </body>
 </html>

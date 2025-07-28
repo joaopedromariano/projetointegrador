@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Carrinho | Drogaria+ Econômica</title>
+  <title>Paracetamol 500mg | Drogaria+ Econômica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
 </head>
@@ -29,31 +29,19 @@
 
 
   <main>
-    <h1>Seu Carrinho</h1>
-    <table class="tabela-carrinho">
-      <thead>
-        <tr>
-          <th>Produto</th>
-          <th>Qtd</th>
-          <th>Preço</th>
-          <th>Total</th>
-          <th>Remover</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Paracetamol 500mg</td>
-          <td><input type="number" value="2" min="1"></td>
-          <td>R$ 11,90</td>
-          <td>R$ 23,80</td>
-          <td><button class="btn-remover">X</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="resumo-carrinho">
-      <p>Subtotal: <strong>R$ 23,80</strong></p>
-      <a href="checkout.html" class="btn">Finalizar Compra</a>
-    </div>
+    <section class="produto-detalhe">
+      <img src="imagens/paracetamol.jpg" alt="Paracetamol 500mg">
+      <div>
+        <h1>Paracetamol 500mg (20 comprimidos)</h1>
+        <p class="preco">R$ 11,90</p>
+        <p>Alívio de dores e febre. Uso adulto e pediátrico. Consulte a bula.</p>
+        <form>
+          <label for="qtd">Quantidade:</label>
+          <input type="number" id="qtd" value="1" min="1" max="10">
+          <button type="submit" class="btn">Adicionar ao Carrinho</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 Drogaria+ Econômica — Ceilândia/DF | Projeto acadêmico.</p>

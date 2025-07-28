@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Carrinho | Drogaria+ Econômica</title>
+  <title>Categorias | Drogaria+ Econômica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
 </head>
@@ -29,34 +29,18 @@
 
 
   <main>
-    <h1>Seu Carrinho</h1>
-    <table class="tabela-carrinho">
-      <thead>
-        <tr>
-          <th>Produto</th>
-          <th>Qtd</th>
-          <th>Preço</th>
-          <th>Total</th>
-          <th>Remover</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Paracetamol 500mg</td>
-          <td><input type="number" value="2" min="1"></td>
-          <td>R$ 11,90</td>
-          <td>R$ 23,80</td>
-          <td><button class="btn-remover">X</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="resumo-carrinho">
-      <p>Subtotal: <strong>R$ 23,80</strong></p>
-      <a href="checkout.html" class="btn">Finalizar Compra</a>
+    <h1>Categorias</h1>
+    <div class="categorias-grid">
+      <a href="produtos.html?cat=medicamentos" class="cat-card">Medicamentos</a>
+      <a href="produtos.html?cat=perfumaria" class="cat-card">Perfumaria</a>
+      <a href="produtos.html?cat=beleza" class="cat-card">Beleza</a>
+      <a href="produtos.html?cat=higiene" class="cat-card">Higiene</a>
+      <a href="produtos.html?cat=infantil" class="cat-card">Infantil</a>
+      
     </div>
   </main>
   <footer>
-    <p>&copy; 2025 Drogaria+ Econômica — Ceilândia/DF | Projeto acadêmico.</p>
+   <p>&copy; 2025 Drogaria+ Econômica — Ceilândia/DF | Projeto acadêmico.</p>
   </footer>
 </body>
 </html>
